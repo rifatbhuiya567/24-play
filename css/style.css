@@ -1,0 +1,501 @@
+/* 
+Author Name	: Rifat Bhuiya
+Template Name	: 24 Play Ltd Website
+Author Email : rifatbhuiya.personal@gmail.com
+*/
+
+:root {
+    --common-box-shadow: .5px .5px .5px 0 rgba(0, 0, 0, 0.3);
+    --primary-color: #000f62;
+    --secondary-color: #0156f6;
+    --white-color: #fff;
+    --black-color: #000;
+    --off-white-color: #f5f5f5;
+    --transition: all .5s ease;
+    --common-border-radius: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+a,
+p,
+li,
+ol,
+ul,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #62646a;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inFlex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.sectionWaysGap {
+    padding: 80px 0;
+}
+
+.sectionGap {
+    padding-top: 48px;
+}
+
+.textGradient {
+    background: -webkit-linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.colorGradient {
+    background: rgb(0,15,98);
+    background: linear-gradient(90deg, rgba(0,15,98,1) 0%, rgba(1,86,246,1) 100%);
+}
+
+.input {
+    border: 1px solid rgba(1, 87, 246, 0.250);
+    padding: 0 6px;
+    border-radius: var(--common-border-radius);
+    -webkit-border-radius: var(--common-border-radius);
+    -moz-border-radius: var(--common-border-radius);
+    -ms-border-radius: var(--common-border-radius);
+    -o-border-radius: var(--common-border-radius);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    color: var(--black-color);
+    font: 600 17px/1.55 'Poppins', sans-serif;
+}
+
+.input:hover, 
+.input:focus {
+    border: 1px solid rgba(1, 87, 246, 0.550);
+}
+
+.input::placeholder {
+    font: 400 15px/1.55 'Poppins', sans-serif;
+}
+
+.btnModelOne {
+    padding: 8px 20px;
+    border: transparent;
+    gap: 6px;
+    color: var(--white-color);
+    text-transform: capitalize;
+    border-radius: var(--common-border-radius);
+    -webkit-border-radius: var(--common-border-radius);
+    -moz-border-radius: var(--common-border-radius);
+    -ms-border-radius: var(--common-border-radius);
+    -o-border-radius: var(--common-border-radius);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.btnModelOne:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.sectionHeading h3 {
+    font: 700 33px/1.5 'Poppins', sans-serif;
+    text-transform: capitalize;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.sectionHeading h3::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 120px);
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+/*  
+    =============
+    Common_CSSEnd
+    =============
+    
+*/
+
+.myNavbar {
+    padding: 2px 0;
+    background-color: var(--white-color);
+    box-shadow: var(--common-box-shadow);
+}
+
+.myNavbar .myLogo img {
+    width: 80px;
+}
+
+.navAnim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    animation: myNavbarAnim .5s linear;
+    -webkit-animation: myNavbarAnim .5s linear;
+}
+
+@keyframes myNavbarAnim {
+    0% {
+        top: -32px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.mainHeaderUl li {
+    padding: 0 4px;
+}
+
+.mainHeaderUl li a {
+    color: var(--primary-color);
+    font: 600 17px/1.55 'Poppins', sans-serif;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.mainHeaderUl li .active,
+.mainHeaderUl li a:focus,
+.mainHeaderUl li a:hover {
+    color: var(--secondary-color) !important;
+}
+
+/*  
+    =============
+    Header_CSSEnd
+    =============
+
+*/
+
+.mainBannerSlide .banner {
+    height: 320px;
+}
+
+.mainContent {
+    margin-top: 40px;
+}
+
+.mainContent h1 {
+    text-transform: capitalize;
+    color: var(--black-color);
+    font: 800 60px/1.55 'Poppins', sans-serif;
+}
+
+.mainContent p {
+    font: 400 21px/1.5 'Poppins', sans-serif;
+}
+
+.mainContent .mainInput {
+    margin: 20px 0 40px;
+    width: 100%;
+    border-radius: var(--common-border-radius);
+    -webkit-border-radius: var(--common-border-radius);
+    -moz-border-radius: var(--common-border-radius);
+    -ms-border-radius: var(--common-border-radius);
+    -o-border-radius: var(--common-border-radius);
+    box-shadow: var(--common-box-shadow);
+    justify-content: space-between;
+}
+
+.mainContent .mainInput input {
+    width: 85%;
+    height: 40px;
+}
+
+/*  
+    =============
+    HeroArea_CSSEnd
+    =============
+
+*/
+
+#service {
+    background-color: var(--white-color);
+}
+
+.serviceContent {
+    padding: 16px 10px;
+    background-color: var(--off-white-color);
+    border: 1px solid rgba(1, 87, 246, 0.150);
+    border-radius: var(--common-border-radius);
+    -webkit-border-radius: var(--common-border-radius);
+    -moz-border-radius: var(--common-border-radius);
+    -ms-border-radius: var(--common-border-radius);
+    -o-border-radius: var(--common-border-radius);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.serviceContent:hover {
+    border: 1px solid rgba(1, 87, 246, 0.550);
+}
+
+.serviceContent .img {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.serviceContent .img::after {
+    position: absolute;
+    content: '';
+    bottom: -8px;
+    left: 50%;
+    height: 2px;
+    width: 60px;
+    background-color: var(--black-color);
+    opacity: .7;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.serviceContent:hover .img::after {
+    opacity: 1;
+    width: 80px;
+}
+
+.serviceContent img {
+    height: 60px;
+    width: 60px;
+    opacity: .7;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+} 
+
+.serviceContent:hover img {
+    opacity: 1;
+}
+
+.serviceContent .text {
+    margin-top: 20px;
+} 
+
+.serviceContent h4 {
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    color: var(--black-color);
+    font: 600 27px/1.5 'Poppins', sans-serif;
+}
+
+.serviceContent p {
+    font: 500 14px/1.5 'Poppins', sans-serif;
+}
+
+.serviceInner .img {
+    height: 400px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.serviceInner .img::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(1,86,246);
+    background: linear-gradient(142deg, rgba(1,86,246,0.25171787464985995) 0%, rgba(0,15,98,0.8511576505602241) 100%);
+    z-index: -1;
+}
+
+.serviceInner .text {
+    width: 100%;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+}
+
+.serviceInner h5 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    letter-spacing: 1px;
+    font: 400 21px/1.5 'Permanent Marker', 'cursive';
+}
+
+/*  
+    =============
+    OurService_CSSEnd
+    =============
+
+*/
+
+.arkServerContent h3 {
+    color: var(--black-color);
+    font: 700 33px/1.5 'Poppins', sans-serif;
+}
+
+.arkServerContent p {
+    margin: 16px 0;
+    font: 400 17px/1.5 'Poppins', sans-serif;
+} 
+
+.arkServerContent .arkAction {
+    margin-top: 20px;
+} 
+
+/*  
+    =============
+    ArkServer_CSSEnd
+    =============
+
+*/
+
+footer {
+    background-color: #00020e;
+}
+
+.copyRight span {
+    color: #d1d1d1;
+    font: 500 17px/1.5 'Poppins', sans-serif;
+}
+
+.footerService h4 {
+    text-transform: uppercase;
+    color: #d1d1d1;
+    font: 600 27px/1.5 'Poppins', sans-serif;
+}
+
+.footerService ul {
+    margin-top: 12px;
+}
+
+.footerService ul li {
+    padding: 4px 0;
+}
+
+.footerService ul li a {
+    text-transform: capitalize;
+    color: #949699;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    font: 400 17px/1.5 'Poppins', sans-serif;
+}
+
+.footerService ul li a:hover {
+    color: #d1d1d1;
+    text-decoration: underline;
+}
+
+.supportMail a {
+    color: #949699;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    text-decoration: underline;
+    font: 400 17px/1.5 'Poppins', sans-serif;
+}
+
+.footerSocialLinks {
+    margin-top: 8px;
+}
+
+.footerSocialLinks ul {
+    gap: 6px;
+}
+
+.footerSocialLinks ul li a {
+    font-size: 32px;
+    color: #949699;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.supportMail a:hover,
+.footerSocialLinks ul li a:hover {
+    color: #d1d1d1;
+}
+
+.paymentOption p {
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.paymentOption ul {
+    gap: 4px;
+}
+
+.paymentOption ul img {
+    width: 48px;
+}
+
+
+/*  
+    =============
+    Footer_CSSEnd
+    =============
+
+*/
